@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Stable-22c55e?style=flat-square)]()
 [![No GPU](https://img.shields.io/badge/GPU-Not%20Required-f59e0b?style=flat-square)]()
+[![CI](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml)
 [![No Services](https://img.shields.io/badge/External%20Services-None-f59e0b?style=flat-square)]()
 
 ---
@@ -205,3 +206,9 @@ Optional stdlib modules used internally: `asyncio`, `json`, `uuid`
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
