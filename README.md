@@ -1,3 +1,5 @@
+<div align="center">
+
 # ALGOgent Runtime SDK v1
 
 > Lightweight Runtime Intelligence SDK for Python Automation, AI Agents, and Resilient Workflows.
@@ -6,8 +8,10 @@
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Stable-22c55e?style=flat-square)]()
 [![No GPU](https://img.shields.io/badge/GPU-Not%20Required-f59e0b?style=flat-square)]()
-[![CI](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml)
 [![No Services](https://img.shields.io/badge/External%20Services-None-f59e0b?style=flat-square)]()
+[![CI](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml)
+
+</div>
 
 ---
 
