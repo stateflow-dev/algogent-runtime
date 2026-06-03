@@ -109,7 +109,7 @@ python -m algogent.examples.ecommerce
 
 **Output:**
 
-![ecommerce output](assets/carbon_ecommerce.png)
+<img src="assets/carbon_ecommerce.png" width="500">
 
 ---
 
@@ -121,7 +121,7 @@ python -m algogent.examples.ai_agent
 
 **Output:**
 
-![ai_agent output](assets/carbon_ai_agent.png)
+<img src="assets/carbon_ai_agent.png" width="500">
 
 ---
 
@@ -133,7 +133,7 @@ python -m algogent.examples.automation
 
 **Output:**
 
-![automation output](assets/carbon_automation.png)
+<img src="assets/carbon_automation.png" width="500">
 
 ---
 
