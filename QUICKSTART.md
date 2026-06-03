@@ -39,7 +39,7 @@ python -m algogent.test.test_checkpoint
 
 <img src="assets/carbon_test_checkpoint.png" width="500">
 
-> UUID akan berbeda setiap run — itu normal.
+> UUID will differ on each run — that is normal.
 
 ---
 
@@ -53,7 +53,7 @@ python -m algogent.test.test_confidence
 
 <img src="assets/carbon_test_confidence.png" width="500">
 
-> Angka mungkin berbeda — confidence score bersifat probabilistik.
+> Output may vary — confidence scores are probabilistic.
 
 ---
 
@@ -93,14 +93,14 @@ python -m algogent.examples.automation
 
 ## Generated Files
 
-Setelah menjalankan examples, ALGOgent akan membuat:
+After running the examples, ALGOgent will automatically create:
 
 ```text
 algogent_state.json          ← runtime state snapshot
 .algogent_checkpoints/       ← checkpoint recovery data
 ```
 
-Tambahkan ke `.gitignore`:
+Add both to `.gitignore`:
 
 ```gitignore
 __pycache__/
@@ -114,4 +114,4 @@ venv/
 
 ---
 
-Semua test passed? Lanjut ke [README.md](README.md) untuk dokumentasi lengkap.
+All tests passed? Head over to [README.md](README.md) for full documentation.
