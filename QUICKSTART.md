@@ -25,7 +25,7 @@ python -m algogent.test.test_state
 
 **Expected Output:**
 
-![test_state output](assets/carbon_test_state.png)
+<img src="assets/carbon_test_state.png" width="500">
 
 ---
 
@@ -37,7 +37,7 @@ python -m algogent.test.test_checkpoint
 
 **Expected Output:**
 
-![test_checkpoint output](assets/carbon_test_checkpoint.png)
+<img src="assets/carbon_test_checkpoint.png" width="500">
 
 > UUID akan berbeda setiap run — itu normal.
 
@@ -51,7 +51,7 @@ python -m algogent.test.test_confidence
 
 **Expected Output:**
 
-![test_confidence output](assets/carbon_test_confidence.png)
+<img src="assets/carbon_test_confidence.png" width="500">
 
 > Angka mungkin berbeda — confidence score bersifat probabilistik.
 
@@ -65,7 +65,7 @@ python -m algogent.test.test_events
 
 **Expected Output:**
 
-![test_events output](assets/carbon_test_events.png)
+<img src="assets/carbon_test_events.png" width="500">
 
 ---
 
@@ -77,7 +77,7 @@ python -m algogent.test.test_logger
 
 **Expected Output:**
 
-![test_logger output](assets/carbon_test_logger.png)
+<img src="assets/carbon_test_logger.png" width="500">
 
 ---
 
