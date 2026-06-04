@@ -17,7 +17,7 @@
 
 ## What is ALGOgent?
 
-ALGOgent is a self-contained Python SDK designed for building **resilient workflows**, **AI agent pipelines**, and **automation systems** — without depending on external services or infrastructure.
+ALGOgent is a self-contained Python SDK designed for building **resilient workflows**, **AI agent pipelines**, and **automation systems** â€” without depending on external services or infrastructure.
 
 It gives your Python code:
 - Automatic retry with smart backoff
@@ -58,42 +58,42 @@ pip install -r requirements.txt
 
 ```text
 algogent-runtime/
-¦
+Â¦
 +-- README.md
 +-- QUICKSTART.md
 +-- requirements.txt
-¦
+Â¦
 +-- algogent/
     +-- core/               # Runtime engine, result types, exceptions
-    ¦   +-- runtime.py
-    ¦   +-- result.py
-    ¦   +-- exceptions.py
-    ¦
+    Â¦   +-- runtime.py
+    Â¦   +-- result.py
+    Â¦   +-- exceptions.py
+    Â¦
     +-- retry/              # Retry engine with backoff strategies
-    ¦   +-- retry_engine.py
-    ¦   +-- backoff.py
-    ¦
+    Â¦   +-- retry_engine.py
+    Â¦   +-- backoff.py
+    Â¦
     +-- state/              # State manager, checkpoint, storage
-    ¦   +-- state_manager.py
-    ¦   +-- checkpoint.py
-    ¦   +-- storage.py
-    ¦
+    Â¦   +-- state_manager.py
+    Â¦   +-- checkpoint.py
+    Â¦   +-- storage.py
+    Â¦
     +-- confidence/         # Confidence scoring engine
-    ¦   +-- confidence_engine.py
-    ¦
+    Â¦   +-- confidence_engine.py
+    Â¦
     +-- events/             # Event bus and event type definitions
-    ¦   +-- event_bus.py
-    ¦   +-- event_types.py
-    ¦
+    Â¦   +-- event_bus.py
+    Â¦   +-- event_types.py
+    Â¦
     +-- observability/      # Logger and runtime metrics
-    ¦   +-- logger.py
-    ¦   +-- metrics.py
-    ¦
+    Â¦   +-- logger.py
+    Â¦   +-- metrics.py
+    Â¦
     +-- examples/           # Runnable workflow examples
-    ¦   +-- ecommerce.py
-    ¦   +-- ai_agent.py
-    ¦   +-- automation.py
-    ¦
+    Â¦   +-- ecommerce.py
+    Â¦   +-- ai_agent.py
+    Â¦   +-- automation.py
+    Â¦
     +-- test/               # Unit tests per module
         +-- test_state.py
         +-- test_checkpoint.py
@@ -209,9 +209,9 @@ Optional stdlib modules used internally: `asyncio`, `json`, `uuid`
 
 ## Roadmap
 
-ALGOgent follows an open-core model — the Community Edition is complete and useful on its own. Pro features will introduce genuinely new capabilities, not move existing ones behind a paywall.
+ALGOgent follows an open-core model â€” the Community Edition is complete and useful on its own. Pro features will introduce genuinely new capabilities, not move existing ones behind a paywall.
 
-### v1.0 — Current ?
+### v1.0 â€” Current ?
 - Runtime Execution Engine
 - Retry Engine with Backoff
 - State Persistence (JSON)
@@ -220,24 +220,17 @@ ALGOgent follows an open-core model — the Community Edition is complete and usef
 - Event Bus System
 - Structured Logging & Metrics
 
-### v1.1 — Planned
+### v1.1 â€” Planned
 - Full async support across all modules
 - SQLite State Backend (`aiosqlite` already in requirements)
 - Improved confidence scoring strategies
 - Extended examples for real-world AI agent workflows
 
-### v2.0 — Pro Tier
-- Advanced workflow orchestration
-- Enterprise-grade state management
-- Enhanced runtime intelligence
-- Commercial integrations
-- Priority support & commercial license
-
 ---
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License â€” see [LICENSE](LICENSE) for details.
 
 ---
 
