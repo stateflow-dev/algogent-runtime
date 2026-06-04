@@ -6,12 +6,14 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Stable-22c55e?style=flat-square)]()
+[![Status](https://img.shields.io/badge/Status-Maintenance-f59e0b?style=flat-square)]()
 [![No GPU](https://img.shields.io/badge/GPU-Not%20Required-f59e0b?style=flat-square)]()
 [![No Services](https://img.shields.io/badge/External%20Services-None-f59e0b?style=flat-square)]()
-[![CI](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml)
 
 </div>
+
+> **Looking for something more advanced?**  
+> Check out [Adaptive Runtime](https://github.com/stateflow-dev/adaptive-runtime) — async, SQLite state, 5 core engines, and production-grade benchmarks.
 
 ---
 
@@ -47,7 +49,7 @@ It gives your Python code:
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/algogent-runtime.git
+git clone https://github.com/stateflow-dev/algogent-runtime.git
 cd algogent-runtime
 pip install -r requirements.txt
 ```
@@ -56,50 +58,50 @@ pip install -r requirements.txt
 
 ## Project Structure
 
-```text
+```
 algogent-runtime/
-¦
-+-- README.md
-+-- QUICKSTART.md
-+-- requirements.txt
-¦
-+-- algogent/
-    +-- core/               # Runtime engine, result types, exceptions
-    ¦   +-- runtime.py
-    ¦   +-- result.py
-    ¦   +-- exceptions.py
-    ¦
-    +-- retry/              # Retry engine with backoff strategies
-    ¦   +-- retry_engine.py
-    ¦   +-- backoff.py
-    ¦
-    +-- state/              # State manager, checkpoint, storage
-    ¦   +-- state_manager.py
-    ¦   +-- checkpoint.py
-    ¦   +-- storage.py
-    ¦
-    +-- confidence/         # Confidence scoring engine
-    ¦   +-- confidence_engine.py
-    ¦
-    +-- events/             # Event bus and event type definitions
-    ¦   +-- event_bus.py
-    ¦   +-- event_types.py
-    ¦
-    +-- observability/      # Logger and runtime metrics
-    ¦   +-- logger.py
-    ¦   +-- metrics.py
-    ¦
-    +-- examples/           # Runnable workflow examples
-    ¦   +-- ecommerce.py
-    ¦   +-- ai_agent.py
-    ¦   +-- automation.py
-    ¦
-    +-- test/               # Unit tests per module
-        +-- test_state.py
-        +-- test_checkpoint.py
-        +-- test_confidence.py
-        +-- test_events.py
-        +-- test_logger.py
+|
+|-- README.md
+|-- QUICKSTART.md
+|-- requirements.txt
+|
+|-- algogent/
+    |-- core/               # Runtime engine, result types, exceptions
+    |   |-- runtime.py
+    |   |-- result.py
+    |   |-- exceptions.py
+    |
+    |-- retry/              # Retry engine with backoff strategies
+    |   |-- retry_engine.py
+    |   |-- backoff.py
+    |
+    |-- state/              # State manager, checkpoint, storage
+    |   |-- state_manager.py
+    |   |-- checkpoint.py
+    |   |-- storage.py
+    |
+    |-- confidence/         # Confidence scoring engine
+    |   |-- confidence_engine.py
+    |
+    |-- events/             # Event bus and event type definitions
+    |   |-- event_bus.py
+    |   |-- event_types.py
+    |
+    |-- observability/      # Logger and runtime metrics
+    |   |-- logger.py
+    |   |-- metrics.py
+    |
+    |-- examples/           # Runnable workflow examples
+    |   |-- ecommerce.py
+    |   |-- ai_agent.py
+    |   |-- automation.py
+    |
+    |-- test/               # Unit tests per module
+        |-- test_state.py
+        |-- test_checkpoint.py
+        |-- test_confidence.py
+        |-- test_events.py
+        |-- test_logger.py
 ```
 
 ---
@@ -112,23 +114,11 @@ algogent-runtime/
 python -m algogent.examples.ecommerce
 ```
 
-**Output:**
-
-<img src="assets/carbon_ecommerce.png" width="500">
-
----
-
 ### 2. AI Agent Workflow
 
 ```bash
 python -m algogent.examples.ai_agent
 ```
-
-**Output:**
-
-<img src="assets/carbon_ai_agent.png" width="500">
-
----
 
 ### 3. Automation Workflow
 
@@ -136,32 +126,17 @@ python -m algogent.examples.ai_agent
 python -m algogent.examples.automation
 ```
 
-**Output:**
-
-<img src="assets/carbon_automation.png" width="500">
-
 ---
 
 ## Running Tests
 
 ```bash
-# Test State Manager
 python -m algogent.test.test_state
-
-# Test Checkpoint Engine
 python -m algogent.test.test_checkpoint
-
-# Test Confidence Engine
 python -m algogent.test.test_confidence
-
-# Test Event Bus
 python -m algogent.test.test_events
-
-# Test Runtime Logger
 python -m algogent.test.test_logger
 ```
-
-> See [QUICKSTART.md](QUICKSTART.md) for expected output of each test.
 
 ---
 
@@ -169,9 +144,9 @@ python -m algogent.test.test_logger
 
 ALGOgent automatically creates these files during execution:
 
-```text
-algogent_state.json          ? runtime state snapshot
-.algogent_checkpoints/       ? recovery checkpoints for long jobs
+```
+algogent_state.json        — runtime state snapshot
+.algogent_checkpoints/     — recovery checkpoints for long jobs
 ```
 
 Add both to `.gitignore`:
@@ -203,15 +178,11 @@ pip install -r requirements.txt
 | `pytest` | = 8.2.0 | Test runner |
 | `pytest-asyncio` | = 0.23.0 | Async test support |
 
-Optional stdlib modules used internally: `asyncio`, `json`, `uuid`
-
 ---
 
 ## Roadmap
 
-ALGOgent follows an open-core model — the Community Edition is complete and useful on its own. Pro features will introduce genuinely new capabilities, not move existing ones behind a paywall.
-
-### v1.0 — Current ?
+### v1.0 — Current ✅
 - Runtime Execution Engine
 - Retry Engine with Backoff
 - State Persistence (JSON)
@@ -220,11 +191,11 @@ ALGOgent follows an open-core model — the Community Edition is complete and us
 - Event Bus System
 - Structured Logging & Metrics
 
-### v1.1 — Planned
-- Full async support across all modules
-- SQLite State Backend (`aiosqlite` already in requirements)
-- Improved confidence scoring strategies
-- Extended examples for real-world AI agent workflows
+### v1.1 — Maintenance Only
+- Bug fixes
+- Documentation improvements
+
+> Active development continues in [Adaptive Runtime](https://github.com/stateflow-dev/adaptive-runtime).
 
 ---
 
