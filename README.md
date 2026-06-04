@@ -12,7 +12,7 @@
 
 </div>
 
-> **Looking for something more advanced?**  
+> **Looking for something more advanced?**
 > Check out [Adaptive Runtime](https://github.com/stateflow-dev/adaptive-runtime) — async, SQLite state, 5 core engines, and production-grade benchmarks.
 
 ---
@@ -60,43 +60,33 @@ pip install -r requirements.txt
 
 ```
 algogent-runtime/
-|
 |-- README.md
-|-- QUICKSTART.md
 |-- requirements.txt
-|
 |-- algogent/
-    |-- core/               # Runtime engine, result types, exceptions
+    |-- core/
     |   |-- runtime.py
     |   |-- result.py
     |   |-- exceptions.py
-    |
-    |-- retry/              # Retry engine with backoff strategies
+    |-- retry/
     |   |-- retry_engine.py
     |   |-- backoff.py
-    |
-    |-- state/              # State manager, checkpoint, storage
+    |-- state/
     |   |-- state_manager.py
     |   |-- checkpoint.py
     |   |-- storage.py
-    |
-    |-- confidence/         # Confidence scoring engine
+    |-- confidence/
     |   |-- confidence_engine.py
-    |
-    |-- events/             # Event bus and event type definitions
+    |-- events/
     |   |-- event_bus.py
     |   |-- event_types.py
-    |
-    |-- observability/      # Logger and runtime metrics
+    |-- observability/
     |   |-- logger.py
     |   |-- metrics.py
-    |
-    |-- examples/           # Runnable workflow examples
+    |-- examples/
     |   |-- ecommerce.py
     |   |-- ai_agent.py
     |   |-- automation.py
-    |
-    |-- test/               # Unit tests per module
+    |-- test/
         |-- test_state.py
         |-- test_checkpoint.py
         |-- test_confidence.py
@@ -109,19 +99,16 @@ algogent-runtime/
 ## Quick Start
 
 ### 1. E-commerce Workflow
-
 ```bash
 python -m algogent.examples.ecommerce
 ```
 
 ### 2. AI Agent Workflow
-
 ```bash
 python -m algogent.examples.ai_agent
 ```
 
 ### 3. Automation Workflow
-
 ```bash
 python -m algogent.examples.automation
 ```
@@ -145,8 +132,8 @@ python -m algogent.test.test_logger
 ALGOgent automatically creates these files during execution:
 
 ```
-algogent_state.json        — runtime state snapshot
-.algogent_checkpoints/     — recovery checkpoints for long jobs
+algogent_state.json       — runtime state snapshot
+.algogent_checkpoints/    — recovery checkpoints for long jobs
 ```
 
 Add both to `.gitignore`:
@@ -165,7 +152,7 @@ venv/
 
 ## Requirements
 
-- **Python 3.10+**
+**Python 3.10+**
 
 ```bash
 pip install -r requirements.txt
@@ -174,7 +161,7 @@ pip install -r requirements.txt
 | Package | Version | Purpose |
 |---|---|---|
 | `pydantic` | = 2.7.0 | Runtime data validation |
-| `aiosqlite` | = 0.20.0 | Future SQLite backend support |
+| `aiosqlite` | = 0.20.0 | SQLite backend support |
 | `pytest` | = 8.2.0 | Test runner |
 | `pytest-asyncio` | = 0.23.0 | Async test support |
 
@@ -182,7 +169,7 @@ pip install -r requirements.txt
 
 ## Roadmap
 
-### v1.0 — Current ✅
+### v1.0 — Current 
 - Runtime Execution Engine
 - Retry Engine with Backoff
 - State Persistence (JSON)
@@ -192,8 +179,7 @@ pip install -r requirements.txt
 - Structured Logging & Metrics
 
 ### v1.1 — Maintenance Only
-- Bug fixes
-- Documentation improvements
+- Bug fixes and documentation improvements
 
 > Active development continues in [Adaptive Runtime](https://github.com/stateflow-dev/adaptive-runtime).
 
@@ -207,4 +193,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## Contributing
 
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions are welcome! Open an issue first for major changes.
