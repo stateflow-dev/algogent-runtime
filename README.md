@@ -12,8 +12,9 @@
 [![CI](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml)
 
 </div>
-Looking for something more advanced?
-Check out Adaptive Runtime — async, SQLite state, 5 core engines, and production-grade benchmarks.
+
+> **Looking for something more advanced?**
+> Check out [Adaptive Runtime](https://github.com/stateflow-dev/adaptive-runtime) — async, SQLite state, 5 core engines, and production-grade benchmarks.
 
 ---
 
@@ -220,12 +221,10 @@ Optional stdlib modules used internally: `asyncio`, `json`, `uuid`
 - Event Bus System
 - Structured Logging & Metrics
 
-v1.1 — Maintenance Only
+### v1.1 — Maintenance Only
+- Bug fixes and documentation improvements
 
-Bug fixes and documentation improvements
-
-
-Active development continues in Adaptive Runtime.
+> Active development continues in [Adaptive Runtime](https://github.com/stateflow-dev/adaptive-runtime).
 
 ---
 
