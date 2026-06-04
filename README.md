@@ -12,6 +12,8 @@
 [![CI](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/stateflow-dev/algogent-runtime/actions/workflows/ci.yml)
 
 </div>
+Looking for something more advanced?
+Check out Adaptive Runtime — async, SQLite state, 5 core engines, and production-grade benchmarks.
 
 ---
 
@@ -209,8 +211,6 @@ Optional stdlib modules used internally: `asyncio`, `json`, `uuid`
 
 ## Roadmap
 
-ALGOgent follows an open-core model — the Community Edition is complete and useful on its own. Pro features will introduce genuinely new capabilities, not move existing ones behind a paywall.
-
 ### v1.0 — Current ?
 - Runtime Execution Engine
 - Retry Engine with Backoff
@@ -220,18 +220,12 @@ ALGOgent follows an open-core model — the Community Edition is complete and us
 - Event Bus System
 - Structured Logging & Metrics
 
-### v1.1 — Planned
-- Full async support across all modules
-- SQLite State Backend (`aiosqlite` already in requirements)
-- Improved confidence scoring strategies
-- Extended examples for real-world AI agent workflows
+v1.1 — Maintenance Only
 
-### v2.0 — Pro Tier
-- Advanced workflow orchestration
-- Enterprise-grade state management
-- Enhanced runtime intelligence
-- Commercial integrations
-- Priority support & commercial license
+Bug fixes and documentation improvements
+
+
+Active development continues in Adaptive Runtime.
 
 ---
 
